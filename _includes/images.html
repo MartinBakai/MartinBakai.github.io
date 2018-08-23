@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Images</title>
+<link href="style.css" type="text/css" rel="stylesheet">
+<link href="http://icons.iconarchive.com/icons/dapino/beach/256/sun-umbrella-icon.png" rel="shortcut icon" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
+
+
+</head>
+<body class="images">
+<nav class="navy">
+	<a href= "./index.html" role="button"> Martin & Petra Summer Fun</a>
+	<a href= "./images.html" role="button">Gallery</a>
+	</nav>
+	<!--  
+	<header><h1>Ezek vagyunk mi!</h1></header>
+	-->
+	<div class="Mivagyunk">
+	<center><img height="600px" width="auto" style="border:3px solid navy"
+	src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/22405516_10211946970887532_4271870348460022383_n.jpg?_nc_cat=0&oh=4b7d285299458b4756a1b1f0c9e0c7a5&oe=5BFE8ED7" 
+	id="mainImage"/></center>
+	<br />
+	<div class="myDiv" onclick="changeImage(event)">
+	<center><img class="imgStyle" src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/22405516_10211946970887532_4271870348460022383_n.jpg?_nc_cat=0&oh=4b7d285299458b4756a1b1f0c9e0c7a5&oe=5BFE8ED7" />
+	<img class="imgStyle" src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/13606487_10207973183865340_3913944813483240907_n.jpg?_nc_cat=0&oh=b55e2ebb91cc0b58c3dd030d16b25246&oe=5C038249" />
+	<img class="imgStyle" src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/27973863_10212929731455932_3209201515338478638_n.jpg?_nc_cat=0&oh=d64292b4fa90db1990bef680474eeff0&oe=5C0CE4E6" />
+	<img class="imgStyle" src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/26731616_10212594293110183_6385615201171456722_n.jpg?_nc_cat=0&oh=7c1b7287def5e97658d7a5e83e7ea1d0&oe=5BF730AC" />
+	</center>
+	</div>
+	</div>
+<!-- <div class="galery">
+	<figure class="galery-item">
+	<img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/22405516_10211946970887532_4271870348460022383_n.jpg?_nc_cat=0&oh=4b7d285299458b4756a1b1f0c9e0c7a5&oe=5BFE8ED7" width="400" height=auto>
+	</figure>
+	<figure class="galery-item">
+	<img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/13606487_10207973183865340_3913944813483240907_n.jpg?_nc_cat=0&oh=b55e2ebb91cc0b58c3dd030d16b25246&oe=5C038249" width="400" height="auto">
+	</figure>
+	<figure class="galery-item">
+	<img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/27973863_10212929731455932_3209201515338478638_n.jpg?_nc_cat=0&oh=d64292b4fa90db1990bef680474eeff0&oe=5C0CE4E6" width="400" height="auto">
+	</figure>
+	<figure class="galery-item">
+	<img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/26731616_10212594293110183_6385615201171456722_n.jpg?_nc_cat=0&oh=7c1b7287def5e97658d7a5e83e7ea1d0&oe=5BF730AC" width="400" height="auto">
+	</figure>
+</div> -->
+	<script type="text/javascript">
+		function changeImage(event){
+			event = event || window.event;
+			var targetElement = event.target || event.srcElement;
+			if (targetElement.tagName == "IMG"){
+				document.getElementById("mainImage").src = targetElement.getAttribute("src");
+			}
+		}
+	</script>
+</body>
+</html>
